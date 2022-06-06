@@ -1,0 +1,65 @@
+<div class="container-fluid h-100 mt-5">
+ <div class="row justify-content-md-center">
+
+   <div class="col-sm-3">
+      <img src={{image}} title="source: imgur.com" style="width:300px"/>
+   </div>
+
+   <div class="col-sm-6">
+     <table>
+       <tr>
+         <h3 class="color-input">{{items.name}}</h3>
+       </tr>
+       <tr>
+         <td>
+           <p class="mr-5 pt-4">Prix:</p>
+         </td>
+         <td>
+           <h5>{{items.price}} CHF</h5>
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <p>Etat:</p>
+         </td>
+         <td>
+           <h5>{{items.state}}</h5>
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <p>Catégorie:</p>
+         </td>
+         <td>
+           <h5>{{items.category}}</h5>
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <p class="mr-5">Description:</p>
+         </td>
+         <td>
+           <h5>{{items.description}}</h5>
+         </td>
+       </tr>
+     </table>
+   </div>
+
+
+   <div class="col-sm-9 mt-5">
+     <table>
+       <tr>
+         <h5 class="color-input">VENDEUR: {{ destinataire.name }} {{ destinataire.surname }}</h5>
+       </tr>
+       <tr>
+         <h5 class="color-input">ADRESSE EMAIL: {{ destinataire.email }} </h5>
+       </tr>
+       <tr>
+         <button type="button" (click)="message()" class="btn btn-dark" style="width: 200px">Envoyer message</button>
+       </tr>
+     </table>
+   </div>
+
+
+ </div>
+</div>
